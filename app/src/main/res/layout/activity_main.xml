@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="397dp"
+        android:layout_height="75dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="    Welcome to ConvertX"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="418dp"
+        android:layout_height="379dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/dollaramount"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/cur"
+        tools:layout_editor_absoluteX="-23dp" />
+
+    <EditText
+        android:id="@+id/dollaramount"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Enter Amount in $$"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:onClick="btnclick"
+        android:text="Enter INR Amount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dollaramount"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/dollaramount"
+        app:layout_constraintTop_toBottomOf="@+id/dollaramount"
+        app:layout_constraintVertical_bias="0.179" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
